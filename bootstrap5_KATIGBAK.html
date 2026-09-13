@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nexora IT Solutions</title>
+<link rel="stylesheet" href="bootstrap5/css/bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap5/css/bootstrap-icons.min.css">
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  section, header {
+    scroll-margin-top: 76px;
+  }
+  .hero-section {
+    background: linear-gradient(135deg, #1a73e8 0%, #0a3d91 100%);
+    padding: 6rem 0 7rem;
+  }
+  .hero-description {
+    max-width: 900px;
+    opacity: 0.5;
+  }
+  .logo-badge {
+    width: 30px;
+    height: 30px;
+    font-size: 0.85rem;
+  }
+  .theme-toggle-btn {
+    width: 38px;
+    height: 38px;
+  }
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
+  }
+  .site-navbar {
+    background-color: var(--bs-tertiary-bg, #f8f9fa);
+  }
+  .section-alt-bg {
+    background-color: var(--bs-tertiary-bg, #f8f9fa);
+  }
+  .pricing-card-popular {
+    border: 2px solid var(--bs-primary, #0d6efd) !important;
+    z-index: 2;
+    overflow: visible;
+  }
+  .popular-badge {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    white-space: nowrap;
+    background-color: var(--bs-primary, #0d6efd);
+    color: #fff;
+  }
+  .carousel-control-custom {
+    width: 48px;
+    height: 48px;
+    font-size: 1.1rem;
+  }
+  .testimonial-carousel {
+    max-width: 720px;
+  }
+  .contact-form {
+    max-width: 700px;
+  }
+  .social-icon-link {
+    font-size: 1.25rem;
+  }
+</style>
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg site-navbar sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fs-3 fw-bold text-primary d-flex align-items-center gap-2" href="#home">
+      Nexora
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-2">
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+        <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item ms-lg-2">
+          <button id="themeToggle" class="btn btn-outline-secondary rounded-circle theme-toggle-btn d-flex align-items-center justify-content-center p-0" type="button" aria-label="Toggle dark mode">
+            <i class="bi bi-moon-stars"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<header id="home" class="hero-section text-center text-white">
+  <div class="container">
+    <span class="badge rounded-pill bg-white text-primary px-3 py-2 mb-4 fw-semibold">Professional IT Solutions</span>
+    <h1 class="display-3 fw-bold mb-4">Technology That Drives<br>Your Business Forward</h1>
+    <p class="lead mx-auto mb-4 hero-description">Nexora IT Solutions provides reliable technology services designed to help businesses improve their operations, strengthen their digital infrastructure, and achieve sustainable growth.</p>
+    <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+      <a href="#pricing" class="btn btn-light btn-lg text-primary fw-bold">Get Started</a>
+      <a href="#features" class="btn btn-outline-light btn-lg fw-semibold">Explore Services</a>
+    </div>
+  </div>
+</header>
+
+
+<section id="features" class="py-5 section-alt-bg">
+  <div class="container py-4 text-center">
+    <h1 class="fw-bold">Our IT Solutions</h1>
+    <p class="text-muted mb-5">Reliable technology services designed to support your business needs.</p>
+    <div class="row row-cols-1 row-cols-md-3 g-4 text-start">
+      <div class="col">
+        <div class="card h-100 border-0 shadow-sm p-3 bg-body">
+          <div class="card-body">
+            <h4 class="fw-bold">Software Development</h4>
+            <p class="text-muted mb-0">Custom web and software solutions designed to improve business processes and meet specific organizational needs.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border-0 shadow-sm p-3 bg-body">
+          <div class="card-body">
+            <h4 class="fw-bold">IT Infrastructure</h4>
+            <p class="text-muted mb-0">Reliable network, hardware, and system solutions that support secure and efficient business operations.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border-0 shadow-sm p-3 bg-body">
+          <div class="card-body">
+            <h4 class="fw-bold">Technical Support</h4>
+            <p class="text-muted mb-0">Professional technical assistance to help businesses maintain their systems and resolve technology-related issues.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="pricing" class="py-5 bg-body">
+  <div class="container py-4 text-center">
+    <h1 class="fw-bold">Flexible Pricing</h1>
+    <p class="text-muted mb-5">Choose the plan that fits your business needs.</p>
+    <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center text-start">
+      <div class="col d-flex">
+        <div class="card h-100 w-100 p-3">
+          <div class="card-body d-flex flex-column">
+            <h5 class="text-muted fw-bold mb-2">Basic</h5>
+            <h1 class="fw-bold mb-3">&#8369;5,000.00 <small class="fs-6 text-muted fw-normal">/mo</small></h1>
+            <ul class="list-unstyled mb-4 flex-grow-1">
+              <li class="mb-2"><i class="bi bi-check-lg text-primary me-2"></i>Basic IT Consultation</li>
+              <li class="mb-2"><i class="bi bi-check-lg text-primary me-2"></i>System Assessment</li>
+              <li class="mb-2 text-muted"><i class="bi bi-x-lg me-2"></i>Priority Assistance</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline-primary w-100">Get Started</a>
+          </div>
+        </div>
+      </div>
+      <div class="col d-flex">
+        <div class="card h-100 w-100 p-3 pricing-card-popular position-relative shadow-lg">
+          <span class="badge rounded-pill popular-badge px-3 py-2">Most Popular</span>
+          <div class="card-body d-flex flex-column">
+            <h5 class="text-primary fw-bold mb-2">Professional</h5>
+            <h1 class="fw-bold mb-3">&#8369;12,000.00 <small class="fs-6 text-muted fw-normal">/mo</small></h1>
+            <ul class="list-unstyled mb-4 flex-grow-1">
+              <li class="mb-2"><i class="bi bi-check-lg text-primary me-2"></i>IT Consultation</li>
+              <li class="mb-2"><i class="bi bi-check-lg text-primary me-2"></i>Website Maintenance</li>
+              <li class="mb-2"><i class="bi bi-check-lg text-primary me-2"></i>Technical Support</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary w-100">Choose Plan</a>
+          </div>
+        </div>
+      </div>
+      <div class="col d-flex">
+        <div class="card h-100 w-100 p-3">
+          <div class="card-body d-flex flex-column">
+            <h5 class="text-muted fw-bold mb-2">Enterprise</h5>
+            <h1 class="fw-bold mb-3">&#8369;25,000.00 <small class="fs-6 text-muted fw-normal">/mo</small></h1>
+            <ul class="list-unstyled mb-4 flex-grow-1">
+              <li class="mb-2"><i class="bi bi-check-lg text-primary me-2"></i>Complete IT Assessment</li>
+              <li class="mb-2"><i class="bi bi-check-lg text-primary me-2"></i>Network Management</li>
+              <li class="mb-2"><i class="bi bi-check-lg text-primary me-2"></i>System Maintenance</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline-primary w-100">Contact Sales</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="reviews" class="py-5 section-alt-bg">
+  <div class="container py-4 text-center">
+    <h1 class="fw-bold mb-5">What People Say</h1>
+    <div class="d-flex align-items-center justify-content-center gap-3 gap-md-4">
+      <button class="btn btn-dark rounded-circle carousel-control-custom d-flex align-items-center justify-content-center p-0 flex-shrink-0" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev" aria-label="Previous testimonial">
+        <i class="bi bi-chevron-left"></i>
+      </button>
+      <div id="testimonialCarousel" class="carousel slide testimonial-carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <blockquote class="lead fst-italic mb-3">"Nexora IT Solutions helped us improve our internal systems and provided excellent technical support throughout the implementation."</blockquote>
+            <p class="fw-bold mb-0">Michael Santos</p>
+            <p class="text-muted small">Business Owner</p>
+          </div>
+          <div class="carousel-item">
+            <blockquote class="lead fst-italic mb-3">"Their team provided a reliable and professional solution for our company's technology needs. Highly recommended for businesses looking for IT support."</blockquote>
+            <p class="fw-bold mb-0">Bea Fontaine</p>
+            <p class="text-muted small">Operations Manager</p>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-dark rounded-circle carousel-control-custom d-flex align-items-center justify-content-center p-0 flex-shrink-0" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next" aria-label="Next testimonial">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<section id="contact" class="py-5 bg-body">
+  <div class="container py-4">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Get In Touch</h2>
+      <p class="text-muted">Fill out the form below to send us a live message.</p>
+    </div>
+    <form id="contactForm" class="row g-3 mx-auto needs-validation contact-form" novalidate>
+      <div class="col-md-6">
+        <label for="firstName" class="form-label">First Name</label>
+        <input type="text" class="form-control" id="firstName" required>
+        <div class="invalid-feedback">Please enter your first name.</div>
+      </div>
+      <div class="col-md-6">
+        <label for="lastName" class="form-label">Last Name</label>
+        <input type="text" class="form-control" id="lastName" required>
+        <div class="invalid-feedback">Please enter your last name.</div>
+      </div>
+      <div class="col-12">
+        <label for="emailAddress" class="form-label">Email Address</label>
+        <input type="email" class="form-control" id="emailAddress" placeholder="you@example.com" required>
+        <div class="invalid-feedback">Please enter a valid email address.</div>
+      </div>
+      <div class="col-12">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" rows="4" required></textarea>
+        <div class="invalid-feedback">Please enter a message.</div>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary w-100 fw-bold py-2">Submit Form</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+<footer class="bg-body-tertiary border-top py-4 text-center">
+  <div class="container">
+    <div class="d-flex justify-content-center gap-3 mb-2">
+      <a href="#" class="text-body social-icon-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="text-body social-icon-link" aria-label="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+      <a href="#" class="text-body social-icon-link" aria-label="GitHub"><i class="bi bi-github"></i></a>
+    </div>
+    <p class="text-muted small mb-0">&copy; 2026 Nexus IT Solutions. Built with Bootstrap 5.3.</p>
+  </div>
+</footer>
+
+<script src="bootstrap5/js/bootstrap.bundle.min.js"></script>
+<script src="bootstrap5/js/sweetalert2.all.min.js"></script>
+<script>
+  const themeToggle = document.getElementById('themeToggle');
+  const htmlEl = document.documentElement;
+
+  themeToggle.addEventListener('click', function () {
+    const darkMode = htmlEl.getAttribute('data-bs-theme') === 'dark';
+
+    htmlEl.setAttribute('data-bs-theme', darkMode ? 'light' : 'dark');
+
+    themeToggle.innerHTML = darkMode
+      ? '<i class="bi bi-moon-stars"></i>'
+      : '<i class="bi bi-sun"></i>';
+  });
+
+  const form = document.getElementById('contactForm');
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    event.stopPropagation();
+    if (!form.checkValidity()) {
+      form.classList.add('was-validated');
+      return;
+    }
+    Swal.fire({
+      icon: 'success',
+      title: 'Message sent!',
+      text: 'Thank you for contacting us.',
+      confirmButtonColor: '#0d6efd'
+    });
+    form.reset();
+    form.classList.remove('was-validated');
+  });
+</script>
+</body>
+</html>
